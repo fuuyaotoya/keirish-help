@@ -14,9 +14,21 @@ export default defineConfig({
       locales: {
         root: { label: '日本語', lang: 'ja' },
       },
+      logo: {
+        src: './src/assets/logo.svg',
+      },
       social: [
         { icon: 'x.com', label: 'X', href: 'https://x.com/keirish_app' },
       ],
+      editLink: {
+        baseUrl:
+          'https://github.com/fuuyaotoya/keirish-help/edit/main/',
+      },
+      lastUpdated: true,
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
+      },
       sidebar: [
         {
           label: 'はじめに',
