@@ -16,15 +16,53 @@ hero:
 
 import { CardGrid, Card } from '@astrojs/starlight/components';
 
-## ガイド一覧
+## はじめに
 
 <CardGrid>
+  <Card title="ケイリッシュとは" icon="open-book">
+    3クリック経理の概要と設計思想
+    [読む →](/about/)
+  </Card>
   <Card title="はじめ方" icon="open-book">
-    サインアップから初回スキャンまで5分で案内
+    サインアップから初回スキャンまで3分
     [読む →](/getting-started/)
   </Card>
+</CardGrid>
+
+## スキャンガイド
+
+<CardGrid>
+  <Card title="領収書をスキャンする" icon="open-book">
+    アップロード方法・対応形式・ファイルサイズ
+    [読む →](/scan-upload/)
+  </Card>
+  <Card title="スキャン前の確認" icon="open-book">
+    支払い手段選択・期間入力・実行
+    [読む →](/scan-prescan/)
+  </Card>
+  <Card title="AI解析結果の見方" icon="open-book">
+    3レーン構成・要確認の理由・Wowバッジ
+    [読む →](/scan-results/)
+  </Card>
+  <Card title="結果を編集する" icon="open-book">
+    金額3択UI・勘定科目・ファイル名修正
+    [読む →](/scan-edit/)
+  </Card>
+  <Card title="外貨の領収書" icon="open-book">
+    TTM換算・3つのモード・対応通貨
+    [読む →](/scan-fx/)
+  </Card>
+  <Card title="CSVエクスポート" icon="open-book">
+    ダウンロード手順・会計ソフト取込
+    [読む →](/scan-export/)
+  </Card>
+</CardGrid>
+
+## その他
+
+<CardGrid>
   <Card title="電帳法について" icon="star">
-    保存要件・ファイル名規則・索引CSV
+    4要件・SHA-256・保存期間・圧縮率
     [読む →](/denchoho/)
   </Card>
   <Card title="料金プラン" icon="star">
@@ -40,11 +78,3 @@ import { CardGrid, Card } from '@astrojs/starlight/components';
     [読む →](/contact/)
   </Card>
 </CardGrid>
-
-## ケイリッシュとは
-
-**3クリック経理** — 画像をアップロードするだけで、AIが日付・金額・取引先・勘定科目を自動抽出。確認してCSVダウンロードするだけのシンプルな経理ツールです。
-
-- **サーバー非保持**: 領収書データは24時間後に自動削除
-- **電帳法対応**: SHA-256・索引CSV・ファイル名規則を標準搭載
-- **Honest AI**: 不確実な箇所は必ずユーザーに確認。サイレントな誤判定を許さない設計

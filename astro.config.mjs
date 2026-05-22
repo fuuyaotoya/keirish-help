@@ -19,9 +19,26 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'ガイド',
+          label: 'はじめに',
           items: [
-            { label: 'はじめに', slug: 'getting-started' },
+            { label: 'ケイリッシュとは', slug: 'about' },
+            { label: 'はじめ方', slug: 'getting-started' },
+          ],
+        },
+        {
+          label: 'スキャンガイド',
+          items: [
+            { label: '領収書をスキャンする', slug: 'scan-upload' },
+            { label: 'スキャン前の確認', slug: 'scan-prescan' },
+            { label: 'AI解析結果の見方', slug: 'scan-results' },
+            { label: '結果を編集する', slug: 'scan-edit' },
+            { label: '外貨の領収書', slug: 'scan-fx' },
+            { label: 'CSVエクスポート', slug: 'scan-export' },
+          ],
+        },
+        {
+          label: 'その他',
+          items: [
             { label: '電帳法について', slug: 'denchoho' },
             { label: '料金プラン', slug: 'pricing' },
             { label: 'よくある質問', slug: 'faq' },
